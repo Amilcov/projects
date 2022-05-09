@@ -1,0 +1,9 @@
+1.    d1 - getTime() = will retuen time in mili seconds  since 1 ian 1970
+
+2.    let d1 = new Date(1977, 09, 02) - months is in index with 0
+
+3.   .classList.add & classList.remove()
+
+4.   .outerHTML 
+
+5.   .closest()
