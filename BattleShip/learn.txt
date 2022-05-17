@@ -1,0 +1,6 @@
+1.  To reduce the space betwen 2 elements: 
+      1.1 make margin negative 
+      1.2 
+           declare to the parent div font-zise: 0
+           &
+           restore the font-size of the child elements 
