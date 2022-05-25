@@ -42,26 +42,29 @@ class Game {
         this.board.mark(player.mark, pos);
         this.drawMove(player, pos);
 
-        if (this.board.isWinner(player.mark)) this.setEndGame(player.mark);
+        if (this.board.isWinner(player.mark)) {
+            this.setEndGame(player.mark);
+            return;
+        }
+        
         if (this.board.isEndGame()) this.setEndGame('None');
         
     }
 
-giveUp() {
-    if (this.status !== '') return;
+    giveUp() {
+        if (this.status !== '') return;
 
-    let player = this.turns % 2 === 0 ? 'O' : 'X';
-    this.setEndGame(player);   
-    this.status = 'giveUp';
-}
+        let player = this.turns % 2 === 0 ? 'O' : 'X';
+        this.setEndGame(player);   
+        this.status = 'giveUp';
+    }
 
-newBtnEnabled(value) {
-    document.getElementById("newBtn").disabled = !value;  
-}
+    newBtnEnabled(value) {
+        document.getElementById("newBtn").disabled = !value;  
+    }
 
-cancelBtnEnabled(value) {
-    document.getElementById("cancelBtn").disabled = !value;  
-}
-
+    cancelBtnEnabled(value) {
+        document.getElementById("cancelBtn").disabled = !value;  
+    }
     
 }

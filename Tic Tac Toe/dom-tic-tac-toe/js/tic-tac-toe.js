@@ -1,10 +1,11 @@
+
 window.onload = () => {
     let newBtn = document.getElementById("newBtn");
     newBtn.addEventListener('click', newGame);
     newBtn.click(); 
 }
 
-
+      
 function newGame() {
    clearBoard();
    clearResult();
@@ -22,7 +23,7 @@ function clearResult() {
 }
 
 function playGame() {  
-    let game = new Game();
+    game = new Game();
     addClickEventToBoard(game);
     addClickEventToCancelBtn(game);
     newBtnEnabled(false);  
@@ -39,6 +40,7 @@ function addClickEventToCancelBtn(game) {
     cancelBtn.addEventListener('click', game.giveUp.bind(game));
 }
 
+
 function newBtnEnabled(value) {
     document.getElementById("newBtn").setAttribute('disabled', !value);
 }
@@ -46,8 +48,4 @@ function newBtnEnabled(value) {
 function cancelBtnEnabled(value) {
     document.getElementById("cancelBtn").disabled = !value;
 }
-    
-
-
-
 
