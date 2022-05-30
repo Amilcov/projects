@@ -106,8 +106,6 @@ async function deleteRecipe(id) {
   // Docs: https://sequelize.org/master/class/lib/model.js~Model.html#instance-method-destroy
   //let recipe = 
   return await Recipe.findByPk(id).then(obj => obj.destroy());
-  //console.log('Adriana11______', recipe);
-  //return await Recipe.destroy(recipe);
 }
 
 async function createNewRecipe(title) {
