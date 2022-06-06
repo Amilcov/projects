@@ -1,13 +1,20 @@
-const {Person, Course} = require('../models');
+
+const { Person, Course, Campus, Department } = require('../models');
 
 async function lookupPersonAndCourses(id) {
-    const student = await Person.findByPk(id, {include: Course});
+    const student = await Person.findByPk(id, {
+        include: {
+            model: Course,
+            include: [Campus, Department]
+        }
+    });
+
     console.log(`
                   STUDENT: ${student.firstName}  ${student.lastName}`);
 
     console.log(`Attends Courses: `); 
     for (let course of student.Courses) {
-        console.log(course.name);
+       console.log(`COURSE NAME: ${course.name}  CAMPUS: ${course.Campus.name}  DEPARTMENT: ${course.Department.name}   `);
     }
 }
 
