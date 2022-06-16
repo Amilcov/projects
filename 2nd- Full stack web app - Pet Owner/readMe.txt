@@ -12,3 +12,8 @@ STEPS:
   
   
   8. nom start
+
+
+
+Description: Project manage the Pets and Owners (of the pet)
+PetTypes also are preloded in database and static - no add of PetTypes
