@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Park.hasMany(models.Attraction, {
+                                        foreignKey: 'parkId',  
+                                        onDelete: 'cascade', 
+                                        hooks: true
+                                      }
+      );
     }
   }
   Park.init({
