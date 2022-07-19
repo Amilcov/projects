@@ -1,22 +1,29 @@
 const express = require("express");
 const morgan = require("morgan");
-const cors = require('cors');
+const cors = require("cors");
+
+
 
 const { environment } = require('./config');
-const indexRouter = require('./routes/index');
-const tweetsRouter =  require('./routes/tweets');
 
+const indexRouter = require('./routes/index');
+const tasksRouter = require('./routes/tasks');
+const usersRouter = require('./routes/users');
 const app = express();
 
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors({"origin": "http://localhost:4000"}));
+app.use(cors({origin: 'http://localhost:4000'}));
+
+
 
 app.use('/', indexRouter);
-app.use('/tweets', tweetsRouter)
+app.use('/tasks', tasksRouter);
+app.use('/users', usersRouter);
 
-
-
+// app.get("/", (req, res) => {
+//   res.send("Welcome to the express-sequelize-starter!");
+// });
 
 // Catch unhandled requests and forward to error handler.
 app.use((req, res, next) => {
@@ -27,6 +34,7 @@ app.use((req, res, next) => {
 
 // Custom error handlers.
 
+
 // Generic error handler.
 app.use((err, req, res, next) => {
   res.status(err.status || 500);
@@ -34,8 +42,8 @@ app.use((err, req, res, next) => {
   res.json({
     title: err.title || "Server Error",
     message: err.message,
-    errors: err.errors,
     stack: isProduction ? null : err.stack,
+    errors: isProduction ? null : err.errors
   });
 });
 
