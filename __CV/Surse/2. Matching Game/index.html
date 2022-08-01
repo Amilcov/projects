@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
+  <title> Matching Game</title>
+ </head>
+ <body>
+  <h1>Matching Game</h1>
+
+  <section class="container">
+
+   <section class="counters">
+    <div class="elem1">
+     <img id="stars" src="img/star_black_3.png" alt="raiting">
+    </div>
+    <p class="moves" id="moves">0 Move</p>
+    <div>
+     <img id="reset" src="img/reset.png" alt="new game" onclick=reset() >
+    </div>
+   </section>
+
+   <div class="cards">
+    <div class="id_card"> <img class="card" id="card1" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(1)> </div>
+    <div class="id_card"> <img class="card" id="card2" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(2)> </div>
+    <div class="id_card"> <img class="card" id="card3" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(3)> </div>
+    <div class="id_card"> <img class="card" id="card4" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(4)> </div>
+
+    <div class="id_card"> <img class="card" id="card5" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(5)> </div>
+    <div class="id_card"> <img class="card" id="card6" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(6)> </div>
+    <div class="id_card"> <img class="card" id="card7" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(7)> </div>
+    <div class="id_card"> <img class="card" id="card8" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(8)> </div>
+
+    <div class="id_card"> <img class="card" id="card9" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(9)> </div>
+    <div class="id_card"> <img class="card" id="card10" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(10)> </div>
+    <div class="id_card"> <img class="card" id="card11" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(11)> </div>
+    <div class="id_card"> <img class="card" id="card12" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(12)> </div>
+
+    <div class="id_card"> <img class="card" id="card13" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(13)> </div>
+    <div class="id_card"> <img class="card" id="card14" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(14)> </div>
+    <div class="id_card"> <img class="card" id="card15" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(15)> </div>
+    <div class="id_card"> <img class="card" id="card16" src="img/card_back.png" alt="click card" onclick=fc_img_onclick(16)> </div>
+   </div>
+
+   <p id="timer"> Time game: 0 seconds</p>
+ </section>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+ }
+
+/*
+*
+*
+*Counters Section
+*
+*
+*/
+
+h1 {
+  text-align: center;
+  font-family:sans-serif;
+ }
+
+.counters {
+  display: grid;
+  grid-template-columns: 42% 47% 11%;
+  width: 100%;
+  position: relative;
+}
+
+.moves {
+  font-size: 16px;
+  align-items: center;
+}
+
+#timer {
+  font-size: 16px;
+  text-align: center;
+}
+
+/*
+*
+*
+*Cards Section
+*
+*
+*/
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+}
+
+#id_card {
+  margin: 2px 2px 2px 2px;
+  border-radius: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+ .container {
+   margin-left: 30%;
+   margin-right: 30%;
+ }
+}
+
+@media screen and (max-width: 1000px) {
+  img.card {
+    width: 70px;
+    height: auto;
+  }
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cards {
+      padding: 2px 2px 2px 2px;
+  }
+}
