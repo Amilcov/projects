@@ -1,1 +1,43 @@
-https://adriana-play.netlify.app
+
+CV Online: https://adriana-play.netlify.app
+
+    Proiecte din CV:
+
+
+    Surse proiecte in CV:
+
+    0. CV
+           surse:           https://github.com/Amilcov/projects/tree/main/__CV/Surse/0.CV
+           host on NetLify: https://adriana-play.netlify.app
+          
+    1.Matching Game
+           surse:           https://github.com/Amilcov/projects/tree/main/__CV/Surse/2.%20Matching%20Game
+           host on NetLify: https://adriana-play-matching-game.netlify.app
+
+    2. Twitter -
+           surse:  Server https://github.com/Amilcov/projects/tree/main/__CV/Surse/1.%20Mini%20Twitter/Server
+           surse:  Server https://github.com/Amilcov/projects/tree/main/__CV/Surse/1.%20Mini%20Twitter/Client
+           
+           host on Heroku(user: amilcov@gmail.com): https://adriana-play-matching-game.netlify.app
+           host on Heroku(user: amilcov@yahoo.com): https://adriana-play-matching-game.netlify.app
+           
+    3. TicTacToe
+        surse -  2 Players: https://github.com/Amilcov/projects/tree/main/Tic%20Tac%20Toe
+        surse - 1 Player against Computer: https://github.com/Amilcov/projects/tree/main/Tic%20Tac%20Toe%20with%20Computer
+        
+        host on NetLify- 2 Players: https://adriana-play-tic-tac-toe.netlify.app
+        host on NetLify- 1 Player against Computer: https://adriana-play-tic-tac-toe-with-computer.netlify.app
+    
+    4. BattleShip
+        surse - 2 Players - 1 Board:  https://github.com/Amilcov/projects/tree/main/BattleShip
+        surse - 1 player + Computer - 2 Boards: https://github.com/Amilcov/projects/tree/main/Battleship%20with%20Computer
+        surse - 1 Player against Computer 1 - Board: https://github.com/Amilcov/projects/tree/main/BattleShipAgainstComputer
+        
+        host on NetLify - 2 Players: https://adriana-play-battleship.netlify.app
+        host on NetLify - 1 player + Computer - 2 Boards: https://adriana-play-battleship-with-computer.netlify.app
+        host on NetLify - 1 Player against Computer 1:   https://adriana-play-battleship-against-computer.netlify.app
+        
+        
+        
+        
+          
