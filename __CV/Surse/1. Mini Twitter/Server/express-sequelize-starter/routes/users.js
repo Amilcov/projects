@@ -4,7 +4,7 @@ const { check, validationResult } = require('express-validator');
 const { asyncHandler, handlerValidationErrors } = require('./utils');
 const { getUserToken, requireAuth } = require('../auth');
 const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+
 
 const router = express.Router();
 
