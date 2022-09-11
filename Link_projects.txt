@@ -17,6 +17,11 @@
    https://adriana-play-tic-tac-toe-with-computer.netlify.app'
    
    
+5.Stock 
+   Server: https://am-stock-server.herokuapp.com/
+   Client: https://am-stock-client.herokuapp.com/
+   
+   
 
      
       
