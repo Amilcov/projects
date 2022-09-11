@@ -37,7 +37,7 @@ window.onload = () => {
 
 
     const pProjects = document.createElement('p');
-    pProjects.innerText = "My Projects";
+    pProjects.innerText = "My Playground Projects";
     pProjects.setAttribute("class", "category");
     pProjects.classList.add("projects");
     document.body.appendChild(pProjects);
@@ -54,34 +54,84 @@ window.onload = () => {
                            <th> PROJECT </th>
                            <th> STACK </th>
                            <th> PREVIEW </th>
+                           <th> Login user demo </th>
                          </tr>  
                      
                        <tr>
-                         <td> <a href= 'https://adriana-play-matching-game.netlify.app/'> Matching Game </a> </td>
+                         <td> <a href= 'https://adriana-play-matching-game.netlify.app/' target="_blank"> Matching Game </a> </td>
                          <td> JS HTML CSS </td>
                          <td>  
                            <img src="./img/1.1_matching_game_start.png" alt="matching game preview picture" width="150" height="150"> 
                            <img src="./img/1.2_matching_game_play.png" alt="matching game preview picture" width="150" height="150"> 
                          </td>
+                         <td></td>
                        </tr>
 
+                     
+
                         <tr>
-                         <td> <a href='https://am2-mini-twitter-client.herokuapp.com/'> Mini Twitter </a> </td>
-                         <td> JS HTML Node Express PUG Sequelize</td>
-                         <td> 
-                           <img src="./img/2.1_Twiter_SignUpUser.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/2.2_Twiter_LoginUser.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/2.3_Twiter_ListsAllTweets.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/2.4_Twiter_createMessage.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/2.5_Twiter_DeleteMessage.png" alt="matching game preview picture" width="150" height="150"> 
-                        </td>
+                          <td> <a href='https://am-stock-client.herokuapp.com/' target="_blank"> Stocks </a> </td>
+                          <td> JS HTML CSS <br>Bootstrap PUG <br>Sequelize <br>Node Express </td>
+                          <td> 
+                            <img src="./img/6.1_Stocks_stock-list.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6.2_Stocks_transaction-add.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6.3_Stocks_analysis_barChart.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6.4_Stocks_analysis-table.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6.5_Stocks_stock-detail.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6.6_Stocks_transaction-edit.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6_7_Stocks_register.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6_7_Stocks_transaction-list.png" alt="matching game preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: demo@y.com </p>
+                            <p> Password: demo</p>
+                         </td>
                        </tr>
+
+                     
+
+                        <tr>
+                          <td> <a href='https://am2-mini-twitter-client.herokuapp.com/' target="_blank"> Mini Twitter </a> </td>
+                          <td> JS HTML <br>Bootstrap PUG <br>Sequelize <br>Node Express </td>
+                          <td> 
+                            <img src="./img/2.1_Twiter_SignUpUser.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/2.2_Twiter_LoginUser.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/2.3_Twiter_ListsAllTweets.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/2.4_Twiter_createMessage.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/2.5_Twiter_DeleteMessage.png" alt="matching game preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: a100!@a1.com </p>
+                            <p> Password: 123456</p>
+                         </td>
+                       </tr>
+
+                       <tr>
+                         <td> <a href='https://am-amusement-park.herokuapp.com/user/login/' target="_blank"> Amusement Park </a> </td>
+                         <td> JS HTML <br> Bootstrap PUG <br>Sequelize <br> Node Express </td>
+                         <td> 
+                           <img src="./img/5.1_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.2_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.3_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.4_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.5_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.6_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.7_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.8_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                        </td>
+                        <td>
+                            <p> Email: UserDemo1!@1.com </p>
+                            <p> Password: UserDemo1!@1.com </p>
+                        </td>
+                       </tr> 
+
+
                        <tr> 
                          <td>
                            Tic Tac Toe Game:
                            <ul class="noBorder">
-                             <li> <a href='https://adriana-play-tic-tac-toe.netlify.app'> 2 Playes </li>
-                             <li> <a href='https://adriana-play-tic-tac-toe-with-computer.netlify.app'> Play with Computer </li>
+                             <li> <a href='https://adriana-play-tic-tac-toe.netlify.app' target="_blank"> 2 Playes </li>
+                             <li> <a href='https://adriana-play-tic-tac-toe-with-computer.netlify.app' target="_blank"> Play with Computer </li>
                            </ul>
 
                          </td>
@@ -89,15 +139,17 @@ window.onload = () => {
                          <td>  
                             <img src="./img/3._TicTacToe.png" alt="matching game preview picture" width="150" height="150"> 
                         </td>
+                        <td>
+                        </td>
                        </tr>
                        <tr> 
 
                          <td>
                            BattleShip Game:
                            <ul class="noBorder">
-                             <li> <a href='https://adriana-play-battleship.netlify.app'> 1 Player </li>
-                             <li> <a href='https://adriana-play-battleship-with-computer.netlify.app'> Play with Computer </li>
-                             <li> <a href='https://adriana-play-battleship-against-computer.netlify.app'> Play against Computer </li>
+                             <li> <a href='https://adriana-play-battleship.netlify.app' target="_blank"> 1 Player </li>
+                             <li> <a href='https://adriana-play-battleship-with-computer.netlify.app' target="_blank"> Play with Computer </li>
+                             <li> <a href='https://adriana-play-battleship-against-computer.netlify.app'target="_blank" target="_blank"> Play against Computer </li>
                            </ul>
                          </td>
 
@@ -109,6 +161,7 @@ window.onload = () => {
                                <li> <img src="./img/4.3_.BattleShip_Against_Computer.png" alt="matching game preview picture" width="150" height="150"> </li>
                              </ul> 
                         </td>
+                        <td></td>
                        </tr>
 
 
@@ -118,23 +171,6 @@ window.onload = () => {
                      `;
 
     myProjectList.innerHTML = projects;                  
-
-    const projects2 = `
-                <li> <a href= 'https://adriana-play-matching-game.netlify.app/'> Matching Game </a> 
-                    <img src="profilePic.png">
-                </li>
-                <li> <a href='https://am2-mini-twitter-client.herokuapp.com/'> Mini Twitter </a> </li>
-                <li> Tic Tac Toe 
-                    <p> 
-                       <ul class="noBorder">
-                          <li> <a href='https://adriana-play-tic-tac-toe.netlify.app'> 2 Playes </li>
-                          <li> <a href='https://adriana-play-tic-tac-toe-with-computer.netlify.app'> Play with Computer </li>
-                       </ul> 
-                    </p>
-                </li>       
-                <li> BattleShip Game</li>
-                `;
-    //myProjectList.innerHTML = projects2; 
 
 
     const pHobbies = document.createElement('p');
