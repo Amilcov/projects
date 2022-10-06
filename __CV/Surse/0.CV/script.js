@@ -20,10 +20,11 @@ window.onload = () => {
         if (today.getMonth() === 9 && today.getDate === 2) {
             daysBetween =  'Happy Birth Day!!'
         } else {
-                if (today.getMonth() >= 10 || (today.getMonth() === 9 &&  today.getDay() === 1) ){
-                  let myNextBDay = new Date(today.getFullYear + 1, 09, 02);
-                }
-           daysBetween = parseInt((myNextBDay.getTime()-today.getTime())/ (24* 3600 * 1000));
+            if (today.getMonth() > 9 || (today.getMonth() === 9 &&  today.getDay() > 2) ){
+              let mynextYearBday = today.getFullYear() + 1;
+               myNextBDay = new Date(mynextYearBday, 09, 02);
+            }
+           daysBetween = parseInt((myNextBDay.getTime()- today.getTime())/ (24* 3600 * 1000));
         }     
 
 
@@ -73,14 +74,14 @@ window.onload = () => {
                           <td> <a href='https://am-stock-client.herokuapp.com/' target="_blank"> Stocks </a> </td>
                           <td> JS HTML CSS <br>Bootstrap PUG <br>Sequelize <br>Node Express </td>
                           <td> 
-                            <img src="./img/6.1_Stocks_stock-list.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6.2_Stocks_transaction-add.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6.3_Stocks_analysis_barChart.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6.4_Stocks_analysis-table.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6.5_Stocks_stock-detail.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6.6_Stocks_transaction-edit.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6_7_Stocks_register.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/6_7_Stocks_transaction-list.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/6.1_Stocks_stock-list.png" alt="stock game preview picture" width="150" height="150"> 
+                            <img src="./img/6.2_Stocks_transaction-add.png" alt="stock game preview picture" width="150" height="150"> 
+                            <img src="./img/6.3_Stocks_analysis_barChart.png" alt="stock game preview picture" width="150" height="150"> 
+                            <img src="./img/6.4_Stocks_analysis-table.png" alt="matcstockhstocking game preview picture" width="150" height="150"> 
+                            <img src="./img/6.5_Stocks_stock-detail.png" alt="stock game preview picture" width="150" height="150"> 
+                            <img src="./img/6.6_Stocks_transaction-edit.png" alt="stock game preview picture" width="150" height="150"> 
+                            <img src="./img/6_7_Stocks_register.png" alt="stock gstockame preview picture" width="150" height="150"> 
+                            <img src="./img/6_7_Stocks_transaction-list.png" alt="stock game preview picture" width="150" height="150"> 
                          </td>
                          <td>
                             <p> User: demo@y.com </p>
@@ -91,14 +92,31 @@ window.onload = () => {
                      
 
                         <tr>
+                          <td> <a href='https://adriana-play-art-museum.netlify.app' target="_blank"> Art Museum </a> </td>
+                          <td> React v6</td>
+                          <td> 
+                            <img src="./img/7.1_Component_Galleris_LinkToGalleries.png" alt="art gallery game preview picture" width="150" height="150"> 
+                            <img src="./img/7.2_Component_Gallery_ListLinkToArtObjects.png" alt="art gallery game preview picture" width="150" height="150"> 
+                            <img src="./img/7.3_Component_ArtObject.png" alt="art gallery game preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: - </p>
+                            <p> Password: - </p>
+                         </td>
+                       </tr>
+
+
+                     
+
+                        <tr>
                           <td> <a href='https://am2-mini-twitter-client.herokuapp.com/' target="_blank"> Mini Twitter </a> </td>
                           <td> JS HTML <br>Bootstrap PUG <br>Sequelize <br>Node Express </td>
                           <td> 
-                            <img src="./img/2.1_Twiter_SignUpUser.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/2.2_Twiter_LoginUser.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/2.3_Twiter_ListsAllTweets.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/2.4_Twiter_createMessage.png" alt="matching game preview picture" width="150" height="150"> 
-                            <img src="./img/2.5_Twiter_DeleteMessage.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/2.1_Twiter_SignUpUser.png" alt="mini twitter game preview picture" width="150" height="150"> 
+                            <img src="./img/2.2_Twiter_LoginUser.png" alt="mini twitter game preview picture" width="150" height="150"> 
+                            <img src="./img/2.3_Twiter_ListsAllTweets.png" alt="mini twitter game preview picture" width="150" height="150"> 
+                            <img src="./img/2.4_Twiter_createMessage.png" alt="mini twitter game preview picture" width="150" height="150"> 
+                            <img src="./img/2.5_Twiter_DeleteMessage.png" alt="mini twitter game preview picture" width="150" height="150"> 
                          </td>
                          <td>
                             <p> User: a100!@a1.com </p>
@@ -110,14 +128,14 @@ window.onload = () => {
                          <td> <a href='https://am-amusement-park.herokuapp.com/user/login/' target="_blank"> Amusement Park </a> </td>
                          <td> JS HTML <br> Bootstrap PUG <br>Sequelize <br> Node Express </td>
                          <td> 
-                           <img src="./img/5.1_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.2_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.3_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.4_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.5_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.6_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.7_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
-                           <img src="./img/5.8_AmusamentPark.png" alt="matching game preview picture" width="150" height="150"> 
+                           <img src="./img/5.1_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.2_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.3_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.4_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.5_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.6_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.7_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
+                           <img src="./img/5.8_AmusamentPark.png" alt="amusament park game preview picture" width="150" height="150"> 
                         </td>
                         <td>
                             <p> Email: UserDemo1!@1.com </p>
@@ -125,7 +143,22 @@ window.onload = () => {
                         </td>
                        </tr> 
 
+                     
 
+                        <tr>
+                          <td> <a href='https://adriana-play-greenhouse.netlify.app' target="_blank"> GreenHouse </a> </td>
+                          <td> React v5</td>
+                          <td> 
+                            <img src="./img/8.1_GreenHouse_general.png" alt="greenhouse preview picture" width="150" height="150"> 
+                            <img src="./img/8.2_GreenHouse_temperature.png" alt=" greenhouse preview picture" width="150" height="150"> 
+                            <img src="./img/8.3_GreenHouse_humidity.png" alt="greenhouse preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: - </p>
+                            <p> Password: - </p>
+                         </td>
+
+ 
                        <tr> 
                          <td>
                            Tic Tac Toe Game:
@@ -137,7 +170,7 @@ window.onload = () => {
                          </td>
                          <td> JS HTML CSS </td>
                          <td>  
-                            <img src="./img/3._TicTacToe.png" alt="matching game preview picture" width="150" height="150"> 
+                            <img src="./img/3._TicTacToe.png" alt="tic-tac-tow game preview picture" width="150" height="150"> 
                         </td>
                         <td>
                         </td>
@@ -156,9 +189,9 @@ window.onload = () => {
                          <td> JS HTML CSS </td>
                          <td>  
                              <ul class="noBorder">
-                               <li> <img src="./img/4.1_.BattleShip_1Player.png" alt="matching game preview picture" width="150" height="150"> </li>
-                               <li> <img src="./img/4.2_.BattleShip_2Players.png" alt="matching game preview picture" width="150" height="150"> </li>
-                               <li> <img src="./img/4.3_.BattleShip_Against_Computer.png" alt="matching game preview picture" width="150" height="150"> </li>
+                               <li> <img src="./img/4.1_.BattleShip_1Player.png" alt="battleship game preview picture" width="150" height="150"> </li>
+                               <li> <img src="./img/4.2_.BattleShip_2Players.png" alt="battleship game preview picture" width="150" height="150"> </li>
+                               <li> <img src="./img/4.3_.BattleShip_Against_Computer.png" alt="battleship game preview picture" width="150" height="150"> </li>
                              </ul> 
                         </td>
                         <td></td>
