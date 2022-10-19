@@ -1,0 +1,17 @@
+.report {
+    font-size: 17px;
+    text-align: center;
+}
+
+.results {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 50%;
+}
+.procent {
+    display: flex;
+    justify-content: right;
+}
+
