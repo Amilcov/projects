@@ -20,11 +20,17 @@ window.onload = () => {
         if (today.getMonth() === 9 && today.getDate === 2) {
             daysBetween =  'Happy Birth Day!!'
         } else {
-            if (today.getMonth() > 9 || (today.getMonth() === 9 &&  today.getDay() > 2) ){
+             console.log('month', today.getMonth() );
+              console.log('day', today.getDay());
+              /*
+            if (today.getMonth() > 9 || (today.getMonth() === 9 &&  today.getDate() > 2) ){
               let mynextYearBday = today.getFullYear() + 1;
                myNextBDay = new Date(mynextYearBday, 09, 02);
+                 console.log('myNextBDay', myNextBDay );
             }
-           daysBetween = parseInt((myNextBDay.getTime()- today.getTime())/ (24* 3600 * 1000));
+            */
+           daysBetween = parseInt((myNextBDay.getTime()- today.getTime())/ (24* 3600 * 1000)) ;
+           daysBetween= daysBetween < 0 ? Math.abs(daysBetween) + ' days ago': daysBetween + 'days';
         }     
 
 
@@ -33,7 +39,7 @@ window.onload = () => {
 
     const countDown = document.createElement('div');
     countDown.setAttribute("id", "birthDays");
-    countDown.innerHTML = '<p> &#127881 &#127873 &#129346 &#127874 : '+ daysUntilMyBDay().toString() + ' days </p>'
+    countDown.innerHTML = '<p> &#127881 &#127873 &#129346 &#127874 : '+ daysUntilMyBDay() + '</p>'
     document.body.appendChild(countDown);
 
 
@@ -146,6 +152,21 @@ window.onload = () => {
                      
 
                         <tr>
+                          <td> <a href='https://adriana-play-star-trek-card.netlify.app' target="_blank"> Star Treck Trading Cards </a> </td>
+                          <td> React v5</td>
+                          <td> 
+                            <img src="./img/9.1_TradingCards_store.png" alt="greenhouse preview picture" width="150" height="150"> 
+                            <img src="./img/9.2_TradingCards_myDeck.png" alt=" greenhouse preview picture" width="150" height="150"> 
+                            <img src="./img/9.3_TradingCards_otherDeck.png" alt="greenhouse preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: - </p>
+                            <p> Password: - </p>
+                         </td>
+
+                     
+
+                        <tr>
                           <td> <a href='https://adriana-play-greenhouse.netlify.app' target="_blank"> GreenHouse </a> </td>
                           <td> React v5</td>
                           <td> 
@@ -157,6 +178,23 @@ window.onload = () => {
                             <p> User: - </p>
                             <p> Password: - </p>
                          </td>
+
+                     
+
+                        <tr>
+                          <td> <a href='https://adriana-play-surveys.netlify.app' target="_blank"> Surveys </a> </td>
+                          <td> React v6</td>
+                          <td> 
+                            <img src="./img/10.1_survey_general.png" alt="survey preview picture" width="150" height="150"> 
+                            <img src="./img/10.2_survey1.png" alt="survey preview picture" width="150" height="150"> 
+                            <img src="./img/10.3_survey2.png" alt="survey preview picture" width="150" height="150">
+                            <img src="./img/10.4_survey_report.png" alt="survey preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: - </p>
+                            <p> Password: - </p>
+                         </td>
+
 
  
                        <tr> 
