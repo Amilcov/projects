@@ -1,0 +1,18 @@
+.btn-nav {
+  background-color: #919292; color: black;  
+  border-radius: 12px; 
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 15px 25px; 
+  text-decoration: none;
+}
+
+.active {
+  background-color: #5e5f5f; color: white; 
+}
+
+
+.nav {
+  margin: 40px;
+}
