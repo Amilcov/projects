@@ -1,10 +1,13 @@
 import parser from 'react-html-parser'; 
 import { useAppContext } from "../../context/AppContext";
+//import SampleReportData from '../../mockdata/spi.json'
+
 
 function Question() {
     const {questionNo, answers, updateAnswers } = useAppContext();
     let question = '';
-
+    //var alternative
+    //question = questionNo > 0 ? SampleReportData.questions[questionNo].stem :SampleReportData.questions[questionNo].instructions;
 
     switch (questionNo) {
       case 0:
@@ -74,7 +77,7 @@ function Question() {
           break;
 
     }
-   
+
  
     return (
         <div>
