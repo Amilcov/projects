@@ -196,6 +196,21 @@ window.onload = () => {
                          </td>
 
 
+                        <tr>
+                          <td> <a href='https://adriana-play-react-classcomp.netlify.app/' target="_blank"> React - Class Components </a> 
+                          </br> &nbsp  vs </br>
+                          <a href='https://adriana-play-react-functionalcomp.netlify.app/' target="_blank"> React - Functional Components </a> </td>
+                          <td> React v6</td>
+                          <td> 
+                            <img src="./img/11.1_tabs-ddww-weather-clock.png" alt="tabs dddw weather clock preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: - </p>
+                            <p> Password: - </p>
+                         </td>
+
+
+
  
                        <tr> 
                          <td>
