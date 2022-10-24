@@ -1,14 +1,26 @@
 import React from 'react';
-import { useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-function AutoComplete({names}){
+class AutoComplete extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputVal: '',
+    };
+  }
 
-  const [inputVal, setInputVal] = useState('');
-  const handleInput = (e) => setInputVal(e.target.value);
-  const selectName = (e) => setInputVal(e.target.innerText);
+  handleInput = (e) => {
+    this.setState({ inputVal: e.target.value });
+  }
 
-  const matches = () => {
+  selectName = (e) => {
+    const name = e.target.innerText;
+    this.setState({ inputVal: name });
+  }
+
+  matches = () => {
+    const { inputVal } = this.state;
+    const { names } = this.props;
     const inputLength = inputVal.length;
     const matches = [];
 
@@ -26,26 +38,27 @@ function AutoComplete({names}){
     return matches;
   }
 
-  let results = matches().map((result) => (
-    <CSSTransition
-      key={result}
-      classNames="result"
-      timeout={{ enter: 500, exit: 300 }}
-    >
-      <li>{result}</li>
-    </CSSTransition>
-  ));
+  render() {
+    const results = this.matches().map((result) => (
+      <CSSTransition
+        key={result}
+        classNames="result"
+        timeout={{ enter: 500, exit: 300 }}
+      >
+        <li>{result}</li>
+      </CSSTransition>
+    ));
 
     return (
       <section>
         <h1>Autocomplete</h1>
         <div className="auto">
           <input
-            onChange={handleInput}
-            value={inputVal}
+            onChange={this.handleInput}
+            value={this.state.inputVal}
             placeholder="Search..."
           />
-          <ul className="auto-dropdown" onClick={selectName}>
+          <ul className="auto-dropdown" onClick={this.selectName}>
             <TransitionGroup>
               {results}
             </TransitionGroup>
@@ -54,6 +67,6 @@ function AutoComplete({names}){
       </section>
     );
   }
-
+};
 
 export default AutoComplete;

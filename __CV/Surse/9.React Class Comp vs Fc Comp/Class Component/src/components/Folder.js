@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React from 'react';
 
 const Headers = ({ titles, currentTab, selectTab }) => {
@@ -29,14 +28,21 @@ const Headers = ({ titles, currentTab, selectTab }) => {
   );
 }
 
-function Folder (props) {
+class Folder extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentTab: 0
+    };
+  }
 
-  const [currentTab, setCurrentTab] = useState(0);
+  selectTab = (num) => {
+    this.setState({ currentTab: num });
+  }
 
-  const selectTab = (num) => setCurrentTab(num);
-  const folder = props.folders[currentTab];
-  const titles = props.folders.map((folder) => folder.title);
-
+  render() {
+    const folder = this.props.folders[this.state.currentTab];
+    const titles = this.props.folders.map((folder) => folder.title);
 
     return (
       <section>
@@ -44,8 +50,8 @@ function Folder (props) {
         <div className='tabs'>
           <Headers
             titles={titles}
-            currentTab={currentTab}
-            selectTab={selectTab}
+            currentTab={this.state.currentTab}
+            selectTab={this.selectTab}
           />
           <div className='tab-content'>
             {folder.content}
@@ -54,6 +60,6 @@ function Folder (props) {
       </section>
     );
   }
-
+}
 
 export default Folder;

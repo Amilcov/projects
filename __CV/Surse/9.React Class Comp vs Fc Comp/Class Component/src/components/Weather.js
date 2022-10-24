@@ -1,12 +1,24 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import { toQueryString } from '../utils';
 
-function Weather(){
+class Weather extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      weather: null
+    };
+  }
 
-  const [weather, setWeather] = useState(null);
-  const errHandle = (err) => console.log('Geolocation is not supported by this device. Please turn on geolocation in order to use this feature');
-  const pollWeather = (location) => {
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(this.pollWeather, this.errHandle);
+    console.log('componentDidMount');
+  }
+
+  errHandle = (err) => {
+    console.log('Geolocation is not supported by this device. Please turn on geolocation in order to use this feature');
+  }
+
+  pollWeather = (location) => {
     let url = 'http://api.openweathermap.org/data/2.5/weather?';
    
     /* Remember that it's unsafe to expose your API key! In production,
@@ -27,14 +39,16 @@ function Weather(){
 
     fetch(url)
       .then((res) => res.json())
-      .then((weatherData) => setWeather(weatherData));
+      .then((weather) => { console.log('weather json', weather);
+        this.setState({ weather })
+      });
   }
 
-    useEffect( () => navigator.geolocation.getCurrentPosition(pollWeather, errHandle), [])
+  render() {
+    const weather = this.state.weather;
     let content = <div className='loading'>loading weather...Geolocation is not supported by this device. Please turn on geolocation in order to use this feature</div>;
     
     if (weather && weather.main) {
-      console.log(weather);
       const temp = (weather.main.temp - 273.15) * 1.8 + 32;
       content = <div> 
         <p>{weather.name}</p>
@@ -49,8 +63,8 @@ function Weather(){
           {content}
         </div>
       </section>
-    )
+    );
   }
-
+}
 
 export default Weather;
