@@ -33,3 +33,8 @@
 
 8.Surveys
   https://adriana-play-surveys.netlify.app/
+  
+9. React Class Component vs Function Comnponent  
+    https://adriana-play-react-classcomp.netlify.app/
+    https://adriana-play-react-functionalcomp.netlify.app/
+  
