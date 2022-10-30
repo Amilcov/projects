@@ -49,8 +49,13 @@ const stateNew = {...state};
        return stateNew;
 
     case EXTRACT:
-      stateNew[action.id].count--;
-      return stateNew;
+       if(stateNew[action.id].count > 0) {
+         stateNew[action.id].count--;
+         return stateNew;
+       } else {
+         return state;
+       }
+   
 
     case REMOVE:
       delete stateNew[action.id];
