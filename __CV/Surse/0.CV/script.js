@@ -95,6 +95,35 @@ window.onload = () => {
                          </td>
                        </tr>
 
+
+                     
+
+                        <tr>
+                          <td> <a href='https://adriana-play-book-library.netlify.app/' target="_blank"> Book Library </a> </td>
+                          <td> JS HTML CSS <br>Bootstrap  <br>Sequelize <br> React v6 <br> Node Express </td>
+                          <td> 
+                            <img src="./img/14_1_BookLibrary.png" alt="Book library preview picture 1" width="150" height="150"> 
+                            <img src="./img/14_2_BookLibrary.png" alt="Book library preview picture 2" width="150" height="150"> 
+                            <img src="./img/14_3_BookLibrary.png" alt="Book library preview picture 3" width="150" height="150"> 
+                            <img src="./img/14_4_BookLibrary.png" alt="Book library preview picture 4" width="150" height="150"> 
+                            <img src="./img/14_5_BookLibrary.png" alt="Book library preview picture 5" width="150" height="150"> 
+                            <img src="./img/14_6_BookLibrary.png" alt="Book library preview picture 6" width="150" height="150"> 
+                            <img src="./img/14_7_BookLibrary.png" alt="Book library preview picture 7" width="150" height="150"> 
+                            <img src="./img/14_8_BookLibrary.png" alt="Book library preview picture 8" width="150" height="150"> 
+                            <img src="./img/14_9_BookLibrary.png" alt="Book library preview picture 9" width="150" height="150"> 
+                            <img src="./img/14_10_BookLibrary.png" alt="Book library preview picture 10" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> &nbsp;&nbsp; *flux worker library:<p/>
+                            <p> User: adriana@y.com </p>
+                            <p> Password: adriana</p>
+                             <br/>
+                            <p>	&nbsp;	&nbsp;  *flux reader:<p/>
+                            <p> User: claudia@y.com </p>
+                            <p> Password: claudia</p>
+                         </td>
+                       </tr>
+
                      
 
                         <tr>
@@ -178,6 +207,21 @@ window.onload = () => {
                             <p> User: - </p>
                             <p> Password: - </p>
                          </td>
+
+                     
+
+                        <tr>
+                          <td> <a href='https://adriana-play-grocery-store.netlify.app/' target="_blank"> Grocery Store </a> </td>
+                          <td> React Redux </td>
+                          <td> 
+                            <img src="./img/12.1_GroceryStore.png" alt="Grocery Store preview picture" width="150" height="150"> 
+                            <img src="./img/12.2_GroceryStore.png" alt="Grocery Store  preview picture" width="150" height="150"> 
+                         </td>
+                         <td>
+                            <p> User: - </p>
+                            <p> Password: - </p>
+                         </td>
+
 
                      
 
