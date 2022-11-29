@@ -1,0 +1,58 @@
+How to deploy project cu 
+   backend: node + db (postgres)
+   frontend: 
+   
+   
+   
+ 1. Backend ul + db (postgres) - deploy pe Heroku
+    1.1 cd in dir backend 
+    1.2 in Heroku -> login in
+        a) creeam o noua applicatie
+                         New ->
+                         Create new app: app_xyz
+        b) instalam db:
+            - selectam din meniul Heroku (din appplicatia noua creeata 1.2.a) )->  "Resources"
+            - in Fieldul "Add-on". -> 
+            - selectam Heroku Postgres.  ->
+            - Selectam planul "Mini" 0.01$ -> 
+            
+         c) in terminal:
+            - heroku run npx sequelize-cli db:migrate   
+            - heroku run npx sequelize-cli db:seed:all
+         d) In Heroku - in app app_xyz:  "Settings" -> Reveal Config Vars -> 
+                                -> JWT_EXPIRES_IN.  =  60480
+                                -> JWT_SECRET. =  (valoarea din .env JXT_SECRET)
+          - selectam Heroku Postgrss Database ->  Settings -> View Credentials->
+            -
+            
+               
+              
+    1.3 IN TERMINAL ->
+          a)  heroku login   
+          b)  git init
+          c)  heroku git:remote -a app_xyz
+          
+          d)  git add .
+          e)  git commit -am "make it better"
+          f)  git push heroku master
+        
+          g) heroku git:remote -a app_xyz
+    
+ 
+ 
+ 
+ 
+ 2. Frontend ul (react) - deploy pe Netlify
+ 
+   2.1 compilam app frontend scrisa in react
+           2.1. a) cd in dir frontend => se creeaza un dir build
+           2.1  b) npm run build
+           
+           
+           2.2.2 a) login in Netlify -> 
+           2.2.2 b) in https://app.netlify.com/teams/amilcov/overview
+           2.2.2 c) click "Add new site" ->  choose Deploy manually
+           2.2.2 d) seleactm directirul build (rezultat la pct 2.1 a)
+          
+           
+           
