@@ -39,7 +39,9 @@ margin: 0 auto;
     background-repeat: no-repeat;
     background-color: #1A1B21;
     border: none;
+    cursor: pointer;
 }
+
 
 .x {
 

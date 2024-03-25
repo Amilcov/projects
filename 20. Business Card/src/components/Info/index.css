@@ -66,6 +66,7 @@ img {
     border-radius: 6px;
     outline: none;
     align-items: center;
+    cursor: pointer;
 }
 
 a {

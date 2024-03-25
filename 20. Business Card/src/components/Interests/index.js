@@ -9,7 +9,7 @@ function Interets() {
 
             <div className='section-interest'>
                 <p className="interest-title"> Interests</p>
-                <p className="interest-info"> Food expert. Nature lover. Music scholar. Reader. Internet fanatic. Sport wannabe. Entrepreneur. Travel geek. Hiking ninja. Healty food fanatic.</p>
+                <p className="interest-info"> Food expert. Nature lover. Music scholar. Reader. Internet fanatic. Sport wannabe. Entrepreneur. Travel geek. Hiking ninja. Healthy food fanatic.</p>
             </div>
         </div>
     )
