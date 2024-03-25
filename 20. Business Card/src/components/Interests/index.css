@@ -1,0 +1,41 @@
+.interest {
+    background-color: #283149;
+    width: 550px;
+    margin: 0 auto;
+
+
+
+}
+
+
+
+.section-interest {
+    width: 318px;
+    margin: 0 116px;
+    background-color: #03071e;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.interest-title {
+    color: #F5F5F5;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 32px;
+
+
+    margin-top: 30px;
+}
+
+.interest-info {
+    color: #DCDCDC;
+    width: 248px;
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    padding-left: 32px;
+    text-align: justify;
+
+    ;
+}

@@ -1,0 +1,62 @@
+/* .footer {
+
+    width: 317px;
+background-color: #161619;
+margin: 0 auto;
+}
+
+*/
+.footer {
+    background-color: #283149;
+    width: 550px;
+
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0px;
+
+
+}
+
+.section-footer {
+    width: 318px;
+    height: 84px;
+    background-color: #03071e;
+
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.btn-icon {
+    width: 25px;
+    height: 25px;
+    display: flexbox;
+    margin-left: 40px;
+    margin-top: 45px;
+
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-color: #1A1B21;
+    border: none;
+}
+
+.x {
+
+    background-image: url("../../../public/images/x Icon.png");
+    background-color: #918E9B;
+    margin-left: 50px;
+    border-radius: 3px;
+}
+
+.fb {
+    background-image: url("../../../public/images/Facebook Icon.png");
+}
+
+.insta {
+    background-image: url("../../../public/images/Instagram Icon.png");
+}
+
+.git {
+    background-image: url("../../../public/images/GitHub Icon.png");
+}

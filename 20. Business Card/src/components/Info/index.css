@@ -1,0 +1,105 @@
+.info {
+    background-color: #283149;
+    width: 550px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 317px;
+    height: 317px;
+    margin-top: 47px;
+    border: none;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.info-section {
+    width: 318px;
+    margin: 0 116px;
+    background-color: #03071e;
+}
+
+
+
+.info-name {
+    color: #FFFFFF;
+    font-family: Inter, san-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info-role {
+    color: #F3BF99;
+    font-family: Inter, san-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 11px;
+}
+
+
+
+.info-site {
+    display: block;
+    color: #F5F5F5;
+    font-family: Inter, san-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.btn {
+    height: 34px;
+    width: 115px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    outline: none;
+    align-items: center;
+}
+
+a {
+    margin-left: 32px;
+    margin-right: 20px;
+}
+
+.btn-email {
+    background-color: #FFFFFF;
+    color: #374151;
+    background-image: url("../../../public/images/Mail.png");
+    background-repeat: no-repeat;
+    background-position-x: 28px;
+    background-position-y: 8.2px;
+    padding-left: 24px;
+    margin: none;
+    outline: none;
+    border: none;
+}
+
+.btn-linkedIn {
+    background-color: #5093E2;
+    color: #5093E2;
+
+    background-image: url("../../../public/images/Button.png");
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+
+    margin: none;
+    outline: none;
+    border: none;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 34px;
+}
