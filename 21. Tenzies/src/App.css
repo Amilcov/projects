@@ -1,0 +1,90 @@
+#app {
+  height: 100vh;
+  width: 100vw;
+}
+
+#div-background {
+  background-color: #0B2434;
+  width: 360px;
+  height: 379px;
+}
+
+#div-game {
+  background-color: #F5F5F5;
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: Karla, "sans-serif";
+}
+
+
+#instructions {
+
+  font-family: Inter;
+  font-size: 13px;
+  letter-spacing: 1px;
+  width: 233px;
+  height: 48px;
+  text-align: center;
+  margin: 0 auto;
+
+  color: #4A4E74;
+  padding: 0;
+  margin-bottom: 34px;
+  ;
+}
+
+#dices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 36px 36px;
+  column-gap: 17px;
+  row-gap: 19px;
+  margin-left: 31px;
+  margin-right: 31px;
+  /* padding: 17px; */
+  ;
+
+}
+
+.button-roll {
+  background-color: #5035FF;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  width: 92px;
+  height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  row-gap: 0.2px;
+  border-radius: 4px;
+
+
+
+}
+
+.container-btn-roll {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+
+}
+
+.button-roll:active {
+  transform: scale(0.95);
+
+}

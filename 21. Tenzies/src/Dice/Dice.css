@@ -1,0 +1,18 @@
+button {
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: white;
+    color: #2B283A;
+    border: none;
+    font-family: Karla;
+    font-size: 21px;
+    box-shadow: 1px 1px #787171;
+
+
+}
+
+
+.dice-selected {
+    background-color: #59E391;
+}
