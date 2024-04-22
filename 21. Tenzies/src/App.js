@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Dice from './Dice/Dice';
+import Confetti from 'react-confetti';
 
 function App() {
 
@@ -79,7 +80,11 @@ function App() {
   return (
     <div id="app" className='div-center'>
       <div id="div-background" className='div-center'>
+
         <div id="div-game" >
+          {displayButton === 'Reset Game' &&
+            <Confetti />
+          }
           <h2> Tenzies</h2>
 
           <p id="instructions">
