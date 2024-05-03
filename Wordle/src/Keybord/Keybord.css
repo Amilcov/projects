@@ -1,0 +1,53 @@
+#container {
+    width: 520px;
+    height: 200px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+button {
+    width: 43px;
+    height: 54px;
+    border-radius: 3px;
+    border: none;
+    color: black;
+    background-color: #D3D6DA;
+    margin-right: 7px;
+    margin-top: 8px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.enter {
+    margin-left: 30x;
+    width: 65px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.del {
+    color: transparent;
+    background-image: url('../../public/backspace.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+}
+
+
+.miss {
+    background-color: #C9B458;
+}
+
+.hit {
+    background-color: #6AAA64;
+}
+
+.not_exist {
+    background-color: #787C7E;
+}
